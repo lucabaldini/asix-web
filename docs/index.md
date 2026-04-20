@@ -17,4 +17,4 @@ and material science.
 ## Explore
 
 - Meet the [team](team.md)
-- Read the [technical information](technical-info.md)
+- Read more about the [project](project.md)

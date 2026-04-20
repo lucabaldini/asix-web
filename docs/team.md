@@ -3,6 +3,13 @@ title: Team
 description: Team members and partner organisations in ASIX.
 ---
 
+The proposal brings together a close-knit work of a team with a two decades long
+track record of accomplishments in areas strictly relevant to the project, including the
+design and development of advanced detectors and detection systems and their qualification
+for use in space&mdash;most notably the design, integration and qualification of the silicon
+tracker for the Large Area Telescope (LAT) onboard the Fermi NASA mission and the Gas
+Pixel Detectors for the NASA-ASI Imaging X-ray Polarimetry Explorer (IXPE).
+
 ## Senior members
 
 <div class="team-grid">
@@ -82,6 +89,21 @@ description: Team members and partner organisations in ASIX.
     <h3>J. S. Hincapie Tarquino</h3>
     <p class="team-affiliation">University of Trento</p>
     <p class="team-role">Detector characterization and test</p>
+  </div>
+
+</div>
+
+
+## Past collaborators
+
+<div class="team-grid">
+
+  <div class="team-card">
+    <div class="team-photo-wrapper">
+     <img src="../assets/images/team/chiara-tomaiuolo.jpeg" alt="CT"
+          class="team-photo">
+    </div>
+    <h3>Chiara Tomaiuolo</h3>
   </div>
 
 </div>

@@ -10,9 +10,9 @@ extra_css = ["stylesheets/extra.css"]
 nav = [
   {"Home" = "index.md"},
   {"Team" = "team.md"},
-  {"Technical info" = "project.md"},
-  {"Publications" = "publications.md"},
-  {"Funding" = "funding.md"}
+  {"Project" = "project.md"},
+  {"Software" = "software.md"},
+  {"Publications" = "publications.md"}
 ]
 
 [project.theme]
