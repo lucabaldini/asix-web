@@ -1,0 +1,44 @@
+\documentclass[margin=10pt]{standalone}
+\usepackage{tikz}
+
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+\renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+\pgfmathsetmacro{\pitch}{5.75}
+\pgfmathsetmacro{\spitch}{1.7 * \pitch}
+\pgfmathsetmacro{\lwidth}{1}
+
+
+\newcommand{\hexagon}{
+    %\begin{scope}[xshift=0.5 * \lwidth mm, yshift=-0.5 * \lwidth mm]
+    %\draw[lightgray, line width=\lwidth mm, rounded corners=\lwidth mm]
+    %    (0:\pitch mm)--(60:\pitch mm)--(120:\pitch mm)--(180:\pitch mm)--(240:\pitch mm)--(300:\pitch mm)--cycle;
+    %\end{scope}
+    \draw[orange, line width=\lwidth mm, rounded corners=\lwidth mm]
+        (0:\pitch mm)--(60:\pitch mm)--(120:\pitch mm)--(180:\pitch mm)--(240:\pitch mm)--(300:\pitch mm)--cycle;
+    }
+
+
+\begin{document}
+
+\begin{tikzpicture}
+    {\Huge
+    \hexagon
+    \node {A};
+    \begin{scope}[xshift=\spitch mm, yshift=-\pitch mm]
+        \hexagon \node {S};
+    \end{scope}
+    \begin{scope}[xshift=2 * \spitch mm]
+        \hexagon \node {I};
+    \end{scope}
+    \begin{scope}[xshift=3 * \spitch mm, yshift=-\pitch mm]
+        \hexagon \node {X};
+    \end{scope}
+    }
+    \node at (1.5, -1.35) {\small Analog Spectral Imager for X-rays};
+\end{tikzpicture}
+
+
+\end{document}
