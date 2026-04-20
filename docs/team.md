@@ -13,7 +13,7 @@ description: Team members and partner organisations in ASIX.
           class="team-photo">
     </div>
     <h3>Luca Baldini</h3>
-    <p class="team-affiliation">University of Pisa</p>
+    <p class="team-affiliation">University and INFN Pisa</p>
     <p class="team-role">Detector development, simulation, reconstruction</p>
   </div>
 
@@ -33,7 +33,7 @@ description: Team members and partner organisations in ASIX.
            class="team-photo">
     </div>
     <h3>Luca Latronico</h3>
-    <p class="team-affiliation">INFN-Torino</p>
+    <p class="team-affiliation">INFN Torino</p>
     <p class="team-role">Detector development, technology transfer</p>
   </div>
 
@@ -43,7 +43,7 @@ description: Team members and partner organisations in ASIX.
            class="team-photo">
     </div>
     <h3>Massimo Minuti</h3>
-    <p class="team-affiliation">INFN-Pisa</p>
+    <p class="team-affiliation">INFN Pisa</p>
     <p class="team-role">Detector development, system engineering</p>
   </div>
 
@@ -53,8 +53,35 @@ description: Team members and partner organisations in ASIX.
            class="team-photo">
     </div>
     <h3>Carmelo Sgrò</h3>
-    <p class="team-affiliation">INFN-Pisa</p>
+    <p class="team-affiliation">INFN Pisa</p>
     <p class="team-role">Detector development, integration and test</p>
+  </div>
+
+</div>
+
+
+## Junior members
+
+<div class="team-grid">
+
+  <div class="team-card">
+    <div class="team-photo-wrapper">
+     <img src="../assets/images/team/augusto-cattafesta.png" alt="AC"
+          class="team-photo">
+    </div>
+    <h3>Augusto Cattafesta</h3>
+    <p class="team-affiliation">University of Pisa</p>
+    <p class="team-role">Simulation and reconstruction software</p>
+  </div>
+
+  <div class="team-card">
+    <div class="team-photo-wrapper">
+      <img src="../assets/images/team/.jpg" alt="JSHT"
+           class="team-photo">
+    </div>
+    <h3>J. S. Hincapie Tarquino</h3>
+    <p class="team-affiliation">University of Trento</p>
+    <p class="team-role">Detector characterization and test</p>
   </div>
 
 </div>
