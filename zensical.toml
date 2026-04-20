@@ -1,0 +1,22 @@
+[project]
+site_name = "ASIX"
+site_url = "https://lucabaldini.github.io/asix-web/"
+site_description = "ASIX project website"
+site_author = "Luca Baldini"
+copyright = "&copy; 2026 ASIX"
+docs_dir = "docs"
+site_dir = "site"
+nav = [
+  {"Home" = "index.md"},
+  {"Funding" = "funding.md"},
+  {"Team" = "team.md"},
+  {"Technical info" = "project.md"}
+]
+
+[project.theme]
+variant = "modern"
+features = [
+  "navigation.instant",
+  "navigation.tabs",
+  "navigation.top"
+]
