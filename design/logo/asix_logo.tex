@@ -1,44 +1,38 @@
-\documentclass[margin=10pt]{standalone}
+\documentclass[margin=5pt]{standalone}
 \usepackage{tikz}
 
 \usepackage[T1]{fontenc}
-\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
-%% The 'sfdefault' option to make the base font sans serif
+
+% The 'sfdefault' option to make the base font sans serif.
+\usepackage[sfdefault]{AlegreyaSans}
 \renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
 
-\pgfmathsetmacro{\pitch}{5.75}
-\pgfmathsetmacro{\spitch}{1.7 * \pitch}
-\pgfmathsetmacro{\lwidth}{1}
+% Radius of circle circumscribing the hexagons.
+\pgfmathsetmacro{\rad}{5.75}
+% Horizontal distance between the centers of the hexagons.
+\pgfmathsetmacro{\hdist}{1.7 * \rad}
+% Line width for the hexagons.
+\pgfmathsetmacro{\lw}{1}
 
-
-\newcommand{\hexagon}{
-    %\begin{scope}[xshift=0.5 * \lwidth mm, yshift=-0.5 * \lwidth mm]
-    %\draw[lightgray, line width=\lwidth mm, rounded corners=\lwidth mm]
-    %    (0:\pitch mm)--(60:\pitch mm)--(120:\pitch mm)--(180:\pitch mm)--(240:\pitch mm)--(300:\pitch mm)--cycle;
-    %\end{scope}
-    \draw[orange, line width=\lwidth mm, rounded corners=\lwidth mm]
-        (0:\pitch mm)--(60:\pitch mm)--(120:\pitch mm)--(180:\pitch mm)--(240:\pitch mm)--(300:\pitch mm)--cycle;
-    }
+% Draw a hexagon.
+\newcommand{\hexagon}[1]{
+    \draw[orange, line width=\lw mm, rounded corners=\lw mm]
+        (0:\rad mm)--(60:\rad mm)--(120:\rad mm)--(180:\rad mm)--
+        (240:\rad mm)--(300:\rad mm)--cycle;
+        \node{#1};
+}
 
 
 \begin{document}
 
 \begin{tikzpicture}
     {\Huge
-    \hexagon
-    \node {A};
-    \begin{scope}[xshift=\spitch mm, yshift=-\pitch mm]
-        \hexagon \node {S};
-    \end{scope}
-    \begin{scope}[xshift=2 * \spitch mm]
-        \hexagon \node {I};
-    \end{scope}
-    \begin{scope}[xshift=3 * \spitch mm, yshift=-\pitch mm]
-        \hexagon \node {X};
-    \end{scope}
+    \hexagon{A}
+    \begin{scope}[xshift=\hdist mm, yshift=-\rad mm]\hexagon{S}\end{scope}
+    \begin{scope}[xshift=2*\hdist mm]\hexagon{I}\end{scope}
+    \begin{scope}[xshift=3*\hdist mm, yshift=-\rad mm]\hexagon{X};\end{scope}
     }
     \node at (1.5, -1.35) {\small Analog Spectral Imager for X-rays};
 \end{tikzpicture}
-
 
 \end{document}
