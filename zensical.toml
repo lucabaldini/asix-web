@@ -6,6 +6,7 @@ site_author = "Luca Baldini"
 copyright = "&copy; 2026 the ASIX team"
 docs_dir = "docs"
 site_dir = "site"
+extra_css = ["stylesheets/extra.css"]
 nav = [
   {"Home" = "index.md"},
   {"Team" = "team.md"},
@@ -16,6 +17,7 @@ nav = [
 
 [project.theme]
 variant = "modern"
+logo = "assets/images/asix_logo.svg"
 features = [
   "navigation.instant",
   "navigation.tabs",
